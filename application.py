@@ -10,7 +10,6 @@ CORS(application)
 def main():
     return render_template('index.html')
 
-
 @application.route('/saveNewUser', methods=['POST'])
 def saveNewUser():
     data = request.get_json()
